@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!-- <div class="title">React tutorial</div>
+ -->
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17/umd/react.production.min.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"
+    ></script>
+    <!-- ---- -->
+    <!-- JSX Bebel -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- ---- -->
+    <script type="text/babel">
+      //
+      //   const Title = React.createElement(
+      //     "div",
+      //     {
+      //       className: "title",
+      //     },
+      //     "React tutorials"
+      //   );
+
+      //JSX
+      const Title = <div className="title"> React tutorial </div>;
+
+      const Image = React.createElement("img", {
+        src: "http://lorempixel.com/400/200",
+      });
+      const App = React.createElement("div", null, Title, Image);
+      const root = document.getElementById("root");
+      ReactDOM.render(App, root);
+    </script>
+  </body>
+</html>
