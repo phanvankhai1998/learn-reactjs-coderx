@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #eee;
 }
 
 .App-logo {
@@ -11,6 +15,18 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.App .Header {
+  padding: 10px 5px;
+  display: flex;
+  border: 1px solid #eee;
+}
+
+.App .Header input {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
 }
 
 .App-header {
